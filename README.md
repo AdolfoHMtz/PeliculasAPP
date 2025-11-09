@@ -1,58 +1,65 @@
-# Peliculas App
+# 🎬 Peliculas App
 
-Aplicación Ionic + Angular que consume la API de TMDB para listar cartelera, populares y detalles de películas, con opción de favoritos en almacenamiento local y búsqueda avanzada.
+Aplicación Ionic + Angular que consume la API de TMDB para mostrar cartelera, peliculas populares y detalles de la pelicula, con guardado de favoritos locales y barra de búsqueda.
 
-## Características
+[![Angular](https://img.shields.io/badge/Angular-20-EA4335?logo=angular&logoColor=white)](https://angular.dev)
+[![Ionic](https://img.shields.io/badge/Ionic-8-3880FF?logo=ionic&logoColor=white)](https://ionicframework.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![RxJS](https://img.shields.io/badge/RxJS-7.8-B7178C?logo=reactivex&logoColor=white)](https://rxjs.dev)
+[![Swiper](https://img.shields.io/badge/Swiper-12-6332F6?logo=swiper&logoColor=white)](https://swiperjs.com)
+[![PWA Ready](https://img.shields.io/badge/PWA-Ready-5A0FC8?logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
+
+## 🧩 Tecnologías y características
 
 - Angular 20 + Ionic 8
-- Swiper para carruseles responsivos (posters, pares y backdrops)
-- Pipes personalizados: `imagen` (URLs y fallback), `pares`, `filtroImagen`
-- Service Worker habilitado (PWA) + manifest
-- Fallback de imágenes (sin avatar / sin banner)
+- Swiper 12 para carruseles responsivos (posters, pares y backdrops)
+- Pipes personalizados: `imagen`, `filtroImagen`
+- Service Worker habilitado (para subirlo como PWA)
 - Búsqueda con sugerencias y disparo por Enter o click
-- Netlify ready (\_redirects para SPA routing)
+- Ionic Storage (localforage) para persistir favoritos
 
-## Scripts
+## 🚀 Instalación y ejecución local
 
 ```bash
-npm start        # Servir en desarrollo
-npm run build    # Build producción (salida en /www)
-npm test         # Ejecutar tests
-npm run lint     # Linter
-```
+# Instalar dependencias
+npm install
 
-## PWA
+# Abrir en desarrollo
+ionic serve -o
 
-- `manifest.webmanifest` con iconos.
-- `ngsw-config.json` para cache de assets y llamadas a TMDB.
-- Se genera `ngsw.json` y `ngsw-worker.js` tras build producción.
+# Build producción (genera www/ con PWA)
+npm run build
 
-## Despliegue en Netlify
-
-1. Build: `npm run build`.
-2. Configurar Publish directory: `www`.
-3. Confirmar archivo `_redirects` en la raíz del deploy.
-
-## Estructura principal
+# Ejecutar tests
+npm test
 
 ```
-src/app/components/          # Componentes UI (sliders, detalle)
+
+Requisitos: Node 18+, npm 9+. Configura tu apiKey en `src/environments/` .
+API de `https://www.themoviedb.org`
+
+
+## 📂 Estructura principal
+
+```
+src/app/components/          # Componentes UI (sliders, detalles)
 src/app/services/            # Servicios de datos y TMDB
 src/app/pipes/               # Pipes personalizados
 src/app/interfaces/          # Interfaces TS
 src/assets/                  # Imágenes y recursos
 ```
 
-## Entorno
+## 🔐 Entorno
 
-Editar claves/URLs en `src/environments/` según sea necesario.
+Editar API/URLs en `src/environments/` según sea necesario.
 
-## Próximos pasos sugeridos
+## 🙌 Créditos
 
-- Página offline personalizada.
-- Íconos dedicados 192x192 y 512x512.
-- Tests adicionales para pipes y servicios.
+- Curso de Ionic de Fernando Herrera (Udemy).
+- TMDB por la API y recursos.
 
----
+> “This product uses the TMDB API but is not endorsed or certified by TMDB.”
 
-© 2025 Peliculas App
+Hecho por Adolfo Huerta Martinez.
+
+© 2025 GALCEX
