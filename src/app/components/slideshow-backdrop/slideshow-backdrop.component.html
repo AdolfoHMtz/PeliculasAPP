@@ -1,0 +1,9 @@
+<swiper-container [modules]="swiperModules" [breakpoints]="breakpoints" [freeMode]="true">
+
+  <swiper-slide *ngFor="let pelicula of peliculas | filtroImagen">
+    <ion-card (click)="verDetalle( pelicula.id )">
+      <img [src]="pelicula.backdrop_path | imagen:'w780':'backdrop'" alt="Backdrop" loading="lazy">
+    </ion-card>
+  </swiper-slide>
+
+</swiper-container>

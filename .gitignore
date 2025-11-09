@@ -18,10 +18,15 @@ log.txt
 /coverage
 
 # Ionic
+# Ionic / Capacitor
 /.ionic
 /www
 /platforms
 /plugins
+.android/
+.ios/
+.idea/
+.DS_Store
 
 # Compiled output
 /dist
@@ -30,9 +35,11 @@ log.txt
 /bazel-out
 
 # Node
-/node_modules
-npm-debug.log
-yarn-error.log
+/node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # IDEs and editors
 .idea/
@@ -51,6 +58,14 @@ yarn-error.log
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+
+# Environment files (uncomment if secrets)
+# src/environments/environment.prod.ts
+
+# Swap/tmp
+*.swp
+*.tmp
+*.log
 
 
 # Miscellaneous

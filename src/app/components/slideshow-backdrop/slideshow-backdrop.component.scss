@@ -1,0 +1,23 @@
+ion-card {
+	margin: 4px;
+	overflow: hidden;
+}
+
+ion-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	aspect-ratio: 16 / 9;
+	border-radius: 10px;
+}
+
+/* Aumentar sensación de ancho ocupando totalmente la slide */
+swiper-slide {
+	padding: 0 2px;
+}
+
+@media (min-width: 1024px) {
+	ion-card { margin: 2px; }
+	swiper-slide { padding: 0 1px; }
+}

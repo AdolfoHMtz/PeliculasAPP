@@ -1,0 +1,18 @@
+/* Ajustar botón "más" para nuevo tamaño de cards */
+.slide-mas {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-mas {
+    position: static;
+    transform: scale(1.05);
+}
+
+.pares-column {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}

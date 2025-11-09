@@ -1,0 +1,18 @@
+<swiper-container [modules]="swiperModules" [breakpoints]="breakpoints" [freeMode]="true">
+
+  <swiper-slide *ngFor="let pares of peliculas | pares">
+    <div class="pares-column">
+      <ion-card mode="md" *ngFor="let pelicula of pares" (click)="verDetalle(pelicula.id)">
+        <img class="poster" [src]="pelicula.poster_path | imagen" loading="lazy">
+      </ion-card>
+    </div>
+  </swiper-slide>
+
+  <swiper-slide class="slide-mas">
+      <ion-button expand="full" class="btn-mas" size="large"
+                  (click)="onClick()">
+  <ion-icon name="add" slot="icon-only"></ion-icon>
+      </ion-button>
+  </swiper-slide>
+
+</swiper-container>

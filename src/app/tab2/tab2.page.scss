@@ -1,0 +1,30 @@
+.search-card {
+	margin: 6px;
+	overflow: hidden;
+}
+
+.search-card img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 8px;
+	object-fit: cover;
+}
+
+.search-card ion-card-header,
+.search-card ion-card-content {
+	padding: 8px;
+}
+
+.search-card ion-card-subtitle {
+	font-size: 0.75rem;
+}
+
+.search-card h2 {
+	font-size: 0.95rem;
+	margin: 0;
+}
+
+@media (min-width: 1024px) {
+	.search-card { margin: 4px; }
+}

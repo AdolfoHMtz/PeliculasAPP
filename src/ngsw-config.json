@@ -1,0 +1,55 @@
+{
+  "$schema": "../node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/manifest.webmanifest",
+          "/*.css",
+          "/*.js"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/svg/**"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "tmdb-api",
+      "urls": [
+        "https://api.themoviedb.org/3/**"
+      ],
+      "cacheConfig": {
+        "maxSize": 100,
+        "maxAge": "24h",
+        "strategy": "performance",
+        "timeout": "10s"
+      }
+    },
+    {
+      "name": "tmdb-images",
+      "urls": [
+        "https://image.tmdb.org/t/p/**"
+      ],
+      "cacheConfig": {
+        "maxSize": 100,
+        "maxAge": "7d",
+        "strategy": "performance"
+      }
+    }
+  ]
+}
