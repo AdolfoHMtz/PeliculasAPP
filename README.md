@@ -64,11 +64,11 @@ Editar API/URLs en `src/environments/` según sea necesario.
 
 | Inicio | Detalles |
 |------|-----------|
-| <img src="docs/screens/inicio.jpeg" width="400" /> | <img src="docs/screens/detalles.jpeg" width="400" /> |
+| <img src="docs/screens/Inicio.jpeg" width="400" /> | <img src="docs/screens/Detalles.jpeg" width="400" /> |
 
 | Búsqueda | Favoritos |
 |--------|----------|
-| <img src="docs/screens/busqueda.jpeg" width="400" /> | <img src="docs/screens/favoritos.jpeg" width="400" /> |
+| <img src="docs/screens/Busqueda.jpeg" width="400" /> | <img src="docs/screens/Favoritos.jpeg" width="400" /> |
 
 
 ## 🙌 Créditos
